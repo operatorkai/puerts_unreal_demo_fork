@@ -9,3 +9,9 @@ Cooked
 Crashes
 Logs
 Saved
+_ReSharper.Caches
+DerivedDataCache
+Platforms
+.sln
+puerts_unreal_demo.sln
+Plugins/Puerts/Source/CSharpParamDefaultValueMetas/CSharpParamDefaultValueMetas.ubtplugin.csproj.props

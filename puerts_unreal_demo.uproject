@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "4.24",
+	"EngineAssociation": "5.3",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -20,6 +20,10 @@
 		{
 			"Name": "Puerts",
 			"Enabled": true
+		},
+		{
+			"Name": "ReactUMG",
+			"Enabled": false
 		}
 	]
 }
