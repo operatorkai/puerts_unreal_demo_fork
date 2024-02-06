@@ -131,7 +131,7 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: C8CB7DA54C7C0832D90E7D80151EC942
+// __TYPE_DECL_START: 60F091E14A9C86179E7EEFB21C57B733
     namespace Game.mixintest.BP_CharBase {
         class BP_CharBase_C extends UE.Character {
             constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
@@ -146,13 +146,18 @@ declare module "ue" {
     }
 
 // __TYPE_DECL_END
-// __TYPE_DECL_START: EE1732E44DC9B3809A05989F1588DF4D
+// __TYPE_DECL_START: FC192B9C4380F59E5DF93898378F7F93
     namespace Game.mixintest.BP_Char {
         class BP_Char_C extends UE.Game.mixintest.BP_CharBase.BP_CharBase_C {
             constructor(Outer?: Object, Name?: string, ObjectFlags?: number);
             UberGraphFrame: UE.PointerToUberGraphFrame;
+            CallRPC() : void;
             ExecuteUbergraph_BP_Char(EntryPoint: number) : void;
-            InpActEvt_M_K2Node_InputKeyEvent_0(Key: UE.Key) : void;
+            InpActEvt_M_K2Node_InputKeyEvent_1(Key: UE.Key) : void;
+            InpActEvt_R_K2Node_InputKeyEvent_0(Key: UE.Key) : void;
+            RPCClient() : void;
+            RPCMulticast() : void;
+            RPCServer() : void;
             static StaticClass(): Class;
             static Find(OrigInName: string, Outer?: Object): BP_Char_C;
             static Load(InName: string): BP_Char_C;

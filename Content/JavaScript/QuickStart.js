@@ -1,7 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const puerts_1 = require("puerts");
 const mixintest_1 = require("./mytest/mixintest");
-(0, mixintest_1.Domixin)();
+let gameInstance = puerts_1.argv.getByName("GameInstance");
+(0, mixintest_1.Domixin)(gameInstance);
+// UsingMixinCalled();
 // let obj = new UE.MainObject();
 // //调试器通过websocket发送断点信息，可能断点生效前脚本已经执行完备，可以通过debugger语句来主动触发断点
 // //debugger;

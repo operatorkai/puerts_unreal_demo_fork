@@ -1,9 +1,12 @@
 import * as UE from 'ue'
 import {$ref, $unref, $set, argv, on, toManualReleaseDelegate, releaseManualReleaseDelegate, blueprint} from 'puerts';
 import { Domixin } from './mytest/mixintest';
+import { UsingMixinCalled } from './UsingMixin';
 
 
-Domixin();
+let gameInstance = (argv.getByName("GameInstance") as UE.GameInstance);
+Domixin(gameInstance);
+// UsingMixinCalled();
 // let obj = new UE.MainObject();
 
 // //调试器通过websocket发送断点信息，可能断点生效前脚本已经执行完备，可以通过debugger语句来主动触发断点

@@ -23,6 +23,13 @@ public:
     virtual void OnStart() override;
 
     virtual void Shutdown() override;
+
+
+    UFUNCTION(BlueprintCallable)
+    static UGameInstance* GetGameInstance();
+
+    UFUNCTION(BlueprintCallable)
+    static void ClientTravel(const FString& url);
 	
 private:
     TSharedPtr<puerts::FJsEnv> GameScript;
